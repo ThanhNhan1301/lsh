@@ -1,11 +1,9 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import {useState} from 'react'
-import {FaStream} from 'react-icons/fa'
-
 import {BiChevronDown} from 'react-icons/bi'
+import {FaStream} from 'react-icons/fa'
 import navlinks from '../../../contants/navlink'
-import removeExp from '../../../lib/removeExp'
 
 export default function Header() {
     const [showNavLink, setShowNavLink] = useState(false)
@@ -68,15 +66,7 @@ export default function Header() {
                                         flex justify-between items-center
                                     '
                                     >
-                                        <Link
-                                            href={
-                                                item.pathname === '/'
-                                                    ? item.pathname
-                                                    : `/${removeExp(
-                                                          item.pathname
-                                                      )}`
-                                            }
-                                        >
+                                        <Link href={item.pathname}>
                                             {item.title}
                                         </Link>
                                         {item.sub && (
@@ -111,11 +101,7 @@ export default function Header() {
                                                 >
                                                     <div className='pl-4 py-2'>
                                                         <Link
-                                                            href={`/${removeExp(
-                                                                item.pathname
-                                                            )}/${removeExp(
-                                                                sub.pathsubname
-                                                            )}`}
+                                                            href={`${item.pathname}${sub.pathsubname}`}
                                                         >
                                                             {sub.subname}
                                                         </Link>

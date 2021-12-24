@@ -5,78 +5,78 @@ export default [
     },
     {
         title: 'Giới thiệu',
-        pathname: '/gioi-thieu',
+        pathname: '/gioithieu',
         sub: [
             {
                 subname: 'Giới thiệu chung',
-                pathsubname: '/gioi-thieu-chung',
+                pathsubname: '/gioithieuchung',
             },
             {
                 subname: 'Sứ mệnh & tầm nhìn',
-                pathsubname: '/su-menh-tam-nhin',
+                pathsubname: '/sumenhtamnhin',
             },
         ],
     },
     {
         title: 'Dịch vụ',
-        pathname: '/dich-vu',
+        pathname: '/dichvu',
         sub: [
             {
                 subname: 'Bất động sản & Xây dựng',
-                pathsubname: '/bat-dong-san-xay-dung',
+                pathsubname: '/batdongsanxaydung',
             },
             {
                 subname: 'Tranh tụng & giải quyết tranh chấp',
-                pathsubname: '/tranh-tung-va-tranh-chap',
+                pathsubname: '/tranhtungvatranhchap',
             },
             {
                 subname: 'Doanh nghiệp & Thương mại',
-                pathsubname: '/doanh-nghiep-thuong-main',
+                pathsubname: '/doanhnghiepthuongmain',
             },
             {
                 subname: 'Sở hữu trí tuệ',
-                pathsubname: '/so-huu-tri-tue',
+                pathsubname: '/sohuutritue',
             },
         ],
     },
     {
         title: 'Cộng sự',
-        pathname: '/cong-su',
+        pathname: '/congsu',
         sub: [
             {
                 subname: 'Luật sư',
-                pathsubname: '/luat-su',
+                pathsubname: '/luatsu',
             },
             {
                 subname: 'Chuyên viên tư vấn',
-                pathsubname: '/chuyen-vien-tu-van',
+                pathsubname: '/chuyenvientuvan',
             },
             {
                 subname: 'Hành chính',
-                pathsubname: '/hanh-chinh',
+                pathsubname: '/hanhchinh',
             },
         ],
     },
     {
         title: 'Bài viết',
-        pathname: '/bai-viet',
+        pathname: '/baiviet',
         sub: [
             {
                 subname: 'Tin tức',
-                pathsubname: '/tin-tuc',
+                pathsubname: '/tintuc',
             },
             {
                 subname: 'Giấy phép',
-                pathsubname: '/giay-phep',
+                pathsubname: '/giayphep',
             },
             {
                 subname: 'Tư vấn doanh nghiệp',
-                pathsubname: '/tu-van-doanh-nghiep',
+                pathsubname: '/tuvandoanhnghiep',
             },
         ],
     },
     {
         title: 'Liên hệ',
-        pathname: '/lien-he',
+        pathname: '/lienhe',
     },
 ]
