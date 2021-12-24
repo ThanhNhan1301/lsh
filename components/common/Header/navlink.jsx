@@ -39,7 +39,7 @@ export default function Navlink({show}) {
                                                 ? link.pathname
                                                 : `/${removeExp(link.pathname)}`
                                         }
-                                        as={link.pathname}
+                                        // as={link.pathname}
                                     >
                                         {link.title}
                                     </Link>
@@ -80,7 +80,7 @@ export default function Navlink({show}) {
                                                         )}/${removeExp(
                                                             sub.pathsubname
                                                         )}`}
-                                                        as={`${link.pathname}${sub.pathsubname}`}
+                                                        // as={`${link.pathname}${sub.pathsubname}`}
                                                     >
                                                         {sub.subname}
                                                     </Link>
