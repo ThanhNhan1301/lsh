@@ -1,3 +1,5 @@
-export default function Baiviet() {
+function Baiviet() {
     return <div>Bai viet</div>
 }
+
+export default Baiviet

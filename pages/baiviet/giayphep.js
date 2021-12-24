@@ -1,9 +1,5 @@
-export default function Giayphep() {
+function Giayphep() {
     return <div>Giayphep</div>
 }
 
-export async function getServerSideProps() {
-    return {
-        props,
-    }
-}
+export default Giayphep

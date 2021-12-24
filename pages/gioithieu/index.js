@@ -1,5 +1,5 @@
-import navlinks from '../../contants/navlink'
-
-export default function Giothieu() {
+function Giothieu() {
     return <div>Gioi thieu</div>
 }
+
+export default Giothieu
