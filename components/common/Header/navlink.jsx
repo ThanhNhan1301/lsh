@@ -34,7 +34,11 @@ export default function Navlink({show}) {
                                     '
                                 >
                                     <Link
-                                        href={`/${removeExp(link.pathname)}`}
+                                        href={
+                                            link.pathname === '/'
+                                                ? link.pathname
+                                                : `/${removeExp(link.pathname)}`
+                                        }
                                         as={link.pathname}
                                     >
                                         {link.title}
@@ -76,7 +80,7 @@ export default function Navlink({show}) {
                                                         )}}/${removeExp(
                                                             link.pathname
                                                         )}}`}
-                                                        as={`/${link.pathname}/${sub.pathsubname}`}
+                                                        as={`${link.pathname}${sub.pathsubname}`}
                                                     >
                                                         {sub.subname}
                                                     </Link>
