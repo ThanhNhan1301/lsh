@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import {Fragment, useState} from 'react'
-import {FaBars} from 'react-icons/fa'
+import {FaStream} from 'react-icons/fa'
 import Navlink from './navlink'
 
 export default function Header() {
@@ -35,7 +35,7 @@ export default function Header() {
                     className='text-white p-2 text-lg border border-white rounded-sm opacity-90 cursor-pointer'
                     onClick={() => setShowNavLink(!showNavLink)}
                 >
-                    <FaBars />
+                    <FaStream />
                 </div>
             </div>
             <Navlink show={showNavLink} />
