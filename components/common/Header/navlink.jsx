@@ -77,10 +77,10 @@ export default function Navlink({show}) {
                                                     <Link
                                                         href={`/${removeExp(
                                                             link.pathname
-                                                        )}}/${removeExp(
-                                                            link.pathname
-                                                        )}}`}
-                                                        as={`${link.pathname}${sub.pathsubname}`}
+                                                        )}/${removeExp(
+                                                            sub.pathsubname
+                                                        )}`}
+                                                        // as={`${link.pathname}${sub.pathsubname}`}
                                                     >
                                                         {sub.subname}
                                                     </Link>
