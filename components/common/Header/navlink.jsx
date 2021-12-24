@@ -1,7 +1,7 @@
 import Link from 'next/link'
-import NAVLINKS from '../../../contants/navlink'
-import {BiChevronDown} from 'react-icons/bi'
 import {useState} from 'react'
+import {BiChevronDown} from 'react-icons/bi'
+import NAVLINKS from '../../../contants/navlink'
 import removeExp from '../../../lib/removeExp'
 
 export default function Navlink({show}) {
@@ -80,7 +80,7 @@ export default function Navlink({show}) {
                                                         )}/${removeExp(
                                                             sub.pathsubname
                                                         )}`}
-                                                        // as={`${link.pathname}${sub.pathsubname}`}
+                                                        as={`${link.pathname}${sub.pathsubname}`}
                                                     >
                                                         {sub.subname}
                                                     </Link>
