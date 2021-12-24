@@ -16,27 +16,24 @@ export default function Navlink({show}) {
                                 key={link.pathname}
                                 className='border-b border-dashed py-4'
                             >
-                                <Link href={link.pathname} passHref={true}>
-                                    <a>
-                                        <div className='font-semibold'>
-                                            {link.title}
-                                        </div>
-                                    </a>
-                                </Link>
+                                <div className='font-semibold'>
+                                    <Link href={link.pathname} passHref={true}>
+                                        {link.title}
+                                    </Link>
+                                </div>
+
                                 {link.sub &&
                                     link.sub.map((sub) => {
                                         return (
-                                            <Link
-                                                href={sub.pathsubname}
-                                                key={sub.pathsubname}
-                                                passHref={true}
-                                            >
-                                                <a>
-                                                    <div className='pt-3 pl-5'>
-                                                        {sub.subname}
-                                                    </div>
-                                                </a>
-                                            </Link>
+                                            <div className='pt-3 pl-5'>
+                                                <Link
+                                                    href={sub.pathsubname}
+                                                    key={sub.pathsubname}
+                                                    passHref={true}
+                                                >
+                                                    {sub.subname}
+                                                </Link>
+                                            </div>
                                         )
                                     })}
                             </li>

@@ -9,9 +9,9 @@ export default function Header() {
     return (
         <Fragment>
             <div className='bg-gray-900 p-5 flex justify-between items-center'>
-                <div>
+                <div className='cursor-pointer'>
                     <Link href='/' passHref={true}>
-                        <div className='rounded-sm flex items-center gap-[24px]'>
+                        <div className='rounded-sm flex items-center gap-[20px]'>
                             <Image
                                 src='/logo.jpg'
                                 alt='logo'
