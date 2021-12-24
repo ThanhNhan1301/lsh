@@ -1,3 +1,11 @@
+import HeadTag from '../components/common/Head/HeadTag'
+import {Fragment} from 'react/cjs/react.production.min'
+
 export default function Home() {
-    return <div className='text-green-500'>Home Page</div>
+    return (
+        <Fragment>
+            <HeadTag />
+            <div>Home Page</div>
+        </Fragment>
+    )
 }
