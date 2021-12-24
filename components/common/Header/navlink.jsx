@@ -33,11 +33,8 @@ export default function Navlink({show}) {
                                     '
                                 >
                                     <Link
-                                        href={
-                                            link.pathname &&
-                                            link.pathname.replaceAll('-', '')
-                                        }
-                                        as={link.pathname && link.pathname}
+                                        href={link.pathname.replaceAll('-', '')}
+                                        as={link.pathname}
                                     >
                                         {link.title}
                                     </Link>
@@ -73,7 +70,14 @@ export default function Navlink({show}) {
                                             >
                                                 <div className='pl-4 py-2'>
                                                     <Link
-                                                        href={sub.pathsubname}
+                                                        href={`/${link.pathname.replaceAll(
+                                                            '-',
+                                                            ''
+                                                        )}/${sub.subname.replaceAll(
+                                                            '-',
+                                                            ''
+                                                        )}`}
+                                                        as={`/${link.pathname}/${sub.pathsubname}`}
                                                     >
                                                         {sub.subname}
                                                     </Link>
