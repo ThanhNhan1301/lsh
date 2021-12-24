@@ -16,7 +16,7 @@ export default function Navlink({show}) {
                                 key={link.pathname}
                                 className='border-b border-dashed py-4'
                             >
-                                <Link href={link.pathname} passHref>
+                                <Link href={link.pathname} passHref={true}>
                                     <a>
                                         <div className='font-semibold'>
                                             {link.title}

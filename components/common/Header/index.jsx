@@ -1,9 +1,8 @@
-import Link from 'next/link'
 import Image from 'next/image'
+import Link from 'next/link'
+import {Fragment, useState} from 'react'
 import {FaBars} from 'react-icons/fa'
 import Navlink from './navlink'
-import {Fragment} from 'react'
-import {useState} from 'react'
 
 export default function Header() {
     const [showNavLink, setShowNavLink] = useState(false)
