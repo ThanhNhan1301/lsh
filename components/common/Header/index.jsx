@@ -62,16 +62,22 @@ export default function Header() {
                                 >
                                     <div
                                         className='
-                                        font-semibold text-gray-300 hover:text-white 
-                                        flex justify-between items-center
-                                    '
+                                            font-semibold text-gray-300 hover:text-white 
+                                            flex justify-between items-center
+                                        '
                                     >
-                                        <Link href={item.pathname}>
-                                            {item.title}
-                                        </Link>
+                                        <div
+                                            onClick={() =>
+                                                setShowNavLink(!showNavLink)
+                                            }
+                                        >
+                                            <Link href={item.pathname}>
+                                                {item.title}
+                                            </Link>
+                                        </div>
                                         {item.sub && (
                                             <div
-                                                className={`w-6 h-6 cursor-pointer text-2xl ${
+                                                className={`w-6 h-6 cursor-pointer text-2xl transition ${
                                                     subNavlink &&
                                                     subNavlink === index
                                                         ? 'rotate-180'
@@ -99,7 +105,14 @@ export default function Header() {
                                                             : 'h-0'
                                                     }`}
                                                 >
-                                                    <div className='pl-4 py-2'>
+                                                    <div
+                                                        className='pl-4 py-2'
+                                                        onClick={() =>
+                                                            setShowNavLink(
+                                                                !showNavLink
+                                                            )
+                                                        }
+                                                    >
                                                         <Link
                                                             href={`${item.pathname}${sub.pathsubname}`}
                                                         >
