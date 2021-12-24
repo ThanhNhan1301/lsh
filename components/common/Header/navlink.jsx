@@ -5,8 +5,8 @@ import {useState} from 'react'
 
 export default function Navlink({show}) {
     const [subNavlink, setSubNavlink] = useState(null)
+
     const handleChangeNavlink = (index) => {
-        console.log({index, subNavlink})
         if (index === subNavlink) {
             return setSubNavlink(null)
         }
@@ -33,8 +33,11 @@ export default function Navlink({show}) {
                                     '
                                 >
                                     <Link
-                                        href={link.pathname.replaceAll('-', '')}
-                                        as={link.pathname}
+                                        href={
+                                            link.pathname &&
+                                            link.pathname.replaceAll('-', '')
+                                        }
+                                        as={link.pathname && link.pathname}
                                     >
                                         {link.title}
                                     </Link>
@@ -44,7 +47,7 @@ export default function Navlink({show}) {
                                                 subNavlink &&
                                                 subNavlink === index
                                                     ? 'rotate-180'
-                                                    : 'rotate-'
+                                                    : 'rotate-0'
                                             }`}
                                             onClick={() =>
                                                 handleChangeNavlink(index)
