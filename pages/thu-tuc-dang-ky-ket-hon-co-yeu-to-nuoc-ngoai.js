@@ -6,7 +6,7 @@ export default function ThuTucDangKyCoYeuToNuocNgoai() {
             <BannerPage
                 title={'THỦ TỤC ĐĂNG KÝ KẾT HÔN CÓ YẾU TỐ NƯỚC NGOÀI'}
             />
-            <div className='m-5 bg-zinc-200 rounded-sm py-3 px-8'>
+            <div className='m-5 bg-zinc-200 rounded-sm py-3 px-8 lg:px-[40px]'>
                 <div className='text-[14px] text-gray-500 my-5'>
                     TH1 4, 2020 / HÀ ĐĂNG LUYỆN
                 </div>

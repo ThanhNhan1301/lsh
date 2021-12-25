@@ -7,7 +7,7 @@ export default function BannerPage({title}) {
                 flex justify-center items-center text-white text-center
             '
         >
-            <span className='text-xl  font-bold leading-8 px-5 lg:text-3xl'>
+            <span className='text-xl  font-bold leading-8 px-8 lg:text-3xl'>
                 {title}
             </span>
         </div>
