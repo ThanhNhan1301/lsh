@@ -5,7 +5,6 @@ import {useState} from 'react'
 import {FaStream} from 'react-icons/fa'
 import HeaderLinkOnPc from './headerLinkOnPc'
 import HeaderLinksOnMobile from './headerLinksOnMobile'
-import Banner from './banner'
 
 export default function Header() {
     const [showHeaderLink, setShowHeaderLink] = useState(false)
@@ -47,7 +46,6 @@ export default function Header() {
                 show={showHeaderLink}
                 handleShow={setShowHeaderLink}
             />
-            <Banner />
         </div>
     )
 }
