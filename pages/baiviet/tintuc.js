@@ -27,7 +27,7 @@ export default function Tintuc() {
             <div className='p-12 lg:flex lg:flex-wrap lg:justify-between'>
                 {data.map((item) => {
                     return (
-                        <Link href={item.path} key={item.path}>
+                        <Link href={item.path} key={item.path} passHref>
                             <div
                                 className='
                                     group w-full bg-gray-300 rounded-md 
