@@ -10,8 +10,8 @@ export default function Banner() {
         >
             <div
                 className='
-                    w-[70%] min-w-[300px] max-w-[400px] h-[100px] bg-black bg-opacity-50 
-                    flex justify-center items-center rounded-lg shadow-lg
+                     
+                    flex justify-center items-center
                     text-white uppercase font-semibold text-2xl italic
                 '
             >
