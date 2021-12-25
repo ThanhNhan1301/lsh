@@ -4,12 +4,14 @@ import BannerPage from '../components/common/BannerPage'
 export default function VisaTheTamTru() {
     return (
         <div className='w-full'>
-            <BannerPage title={'VISA – THẺ TẠM TRÚ'} />
+            <BannerPage title='VISA – THẺ TẠM TRÚ' />
             <div className='m-5 bg-zinc-200 rounded-sm py-3 px-8 lg:px-[40px]'>
                 <div className='text-[14px] text-gray-500 my-5'>
                     TH1 4, 2020 / HÀ ĐĂNG LUYỆN
                 </div>
-                <h3 className='mb-5 font-bold leading-6'>VISA – THẺ TẠM TRÚ</h3>
+                <h3 className='mb-5 font-bold leading-6'>
+                    VISA {'–'} THẺ TẠM TRÚ
+                </h3>
                 <h3 className='mb-5 font-bold leading-6 text-gray-500'>
                     QUY ĐỊNH VỀ THỊ THỰC (VISA), THẺ TẠM TRÚ của nhà đầu tư nước
                     ngoài
@@ -37,8 +39,8 @@ export default function VisaTheTamTru() {
                         chính thức có hiệu lực ngày 01.07.2020 như sau:
                     </p>
                     <h3 className='leading-10 mb-3 font-semibold'>
-                        PHÂN LOẠI THỊ THỰC(VISA) CHO NHÀ ĐẦU TƯ – ký hiệu “ĐT”
-                        theo mức vốn góp.
+                        PHÂN LOẠI THỊ THỰC(VISA) CHO NHÀ ĐẦU TƯ {'–'} ký hiệu
+                        “ĐT” theo mức vốn góp.
                     </h3>
                     <ul className=' list-inside list-decimal'>
                         <li className='leading-8 mb-3'>
@@ -155,7 +157,7 @@ export default function VisaTheTamTru() {
                             lao động theo quy định của pháp luật về lao động.
                         </li>
                     </ul>
-                    <div className='p-5 mb-5 bg-gray-400 text-gray-700 rounded-md shadow-md'>
+                    <div className='p-5 mb-5 bg-gray-400 text-gray-700 rounded-md sha'>
                         <div className='leading-8 mb-3 '>
                             Trường hợp chuyển đổi mục đích thị thực theo quy
                             định tại khoản này thì được cấp thị thực mới có ký
