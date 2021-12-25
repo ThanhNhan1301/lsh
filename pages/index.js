@@ -30,10 +30,11 @@ export default function Home() {
                         <Link href={item.path}>
                             <div
                                 className='
-                            group w-full bg-gray-300 rounded-md 
-                            cursor-pointer shadow-lg mb-10
-                            lg:w-[48%]
-                        '
+                                    group w-full bg-gray-300 rounded-md 
+                                    cursor-pointer shadow-lg mb-10
+                                    lg:w-[48%]
+                                '
+                                key={item.path}
                             >
                                 <div className='h-[4px] bg-blue-500 rounded-t-md w-0 group-hover:w-full transition-[width]' />
                                 <h2 className='leading-6 text-center px-3 h-[100px] font-bold flex justify-center items-center'>
