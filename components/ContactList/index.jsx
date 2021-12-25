@@ -18,7 +18,7 @@ export default function ContactList() {
                     border-[2px] border-green-500
                 '
             >
-                <Link href='https://zalo.me/0983451111'>
+                <Link href='https://zalo.me/0983451111' passHref>
                     <div className='w-[25px] h-[25px] relative '>
                         <Image
                             src='/icons/zalo.png'
@@ -28,7 +28,10 @@ export default function ContactList() {
                     </div>
                 </Link>
             </div>
-            <Link href='https://www.messenger.com/login.php?next=https%3A%2F%2Fwww.messenger.com%2Ft%2Fhuy.dinhquang.39'>
+            <Link
+                href='https://www.messenger.com/login.php?next=https%3A%2F%2Fwww.messenger.com%2Ft%2Fhuy.dinhquang.39'
+                passHref
+            >
                 <div
                     className='
                     cursor-pointer w-[50px] h-[50px] 
@@ -40,7 +43,7 @@ export default function ContactList() {
                     <FaFacebookSquare />
                 </div>
             </Link>
-            <Link href='tel:+84983451111'>
+            <Link href='tel:+84983451111' passHref>
                 <div
                     className='
                     cursor-pointer w-[50px] h-[50px] 

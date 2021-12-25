@@ -11,7 +11,7 @@ export default function HeaderLinkOnPc() {
                 {navlink.map((link, index) => {
                     return (
                         <li key={index} className='text-white relative group'>
-                            <Link href={link.pathname} className=' '>
+                            <Link href={link.pathname} passHref>
                                 <div className='opacity-80 hover:opacity-100 flex justify-center items-center cursor-pointer'>
                                     <span>{link.title}</span>
                                     {link.sub && (
@@ -39,6 +39,7 @@ export default function HeaderLinkOnPc() {
                                             <Link
                                                 key={sub.pathsubname}
                                                 href={`${link.pathname}${sub.pathsubname}`}
+                                                passHref
                                             >
                                                 <div
                                                     className='

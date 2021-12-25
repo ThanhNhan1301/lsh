@@ -266,13 +266,13 @@ function QuyDinhVeGiamVonDieuLeCongTyMoiCapNhat() {
                             cần trao đổi chi tiết thêm hoặc có nhu cầu sử dụng
                             dịch vụ của Công Ty Luật TNHH Luật sư Hà chúng tôi,
                             hãy liên hệ qua email “{' '}
-                            <Link href='mailto:luatsu.ha77@gmail.com'>
+                            <Link href='mailto:luatsu.ha77@gmail.com' passHref>
                                 <span className='text-blue-700 pl-[2px] cursor-pointer font-semibold'>
                                     luatsu.ha77@gmail.com
                                 </span>
                             </Link>{' '}
                             ” hoặc Hotline:
-                            <Link href='tel:+84983451111'>
+                            <Link href='tel:+84983451111' passHref>
                                 <span className='text-blue-700 pl-[2px] cursor-pointer font-semibold'>
                                     0983.451111
                                 </span>
