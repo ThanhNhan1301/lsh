@@ -28,36 +28,30 @@ export default function ContactList() {
                     </div>
                 </Link>
             </div>
-
-            <div
-                className='
+            <Link href='https://www.messenger.com/login.php?next=https%3A%2F%2Fwww.messenger.com%2Ft%2Fhuy.dinhquang.39'>
+                <div
+                    className='
                     cursor-pointer w-[50px] h-[50px] 
                     flex justify-center items-center
                     rounded-full bg-green-400 border-[2px]
                     border-green-500 text-blue-800
                 '
-            >
-                <Link
-                    href={
-                        'https://www.messenger.com/login.php?next=https%3A%2F%2Fwww.messenger.com%2Ft%2Fhuy.dinhquang.39'
-                    }
                 >
                     <FaFacebookSquare />
-                </Link>
-            </div>
-
-            <div
-                className='
+                </div>
+            </Link>
+            <Link href='tel:+84983451111'>
+                <div
+                    className='
                     cursor-pointer w-[50px] h-[50px] 
                     flex justify-center items-center
                     rounded-full bg-green-400 border-[2px]
                     border-green-500 text-blue-800
                 '
-            >
-                <Link href={'tel:+84983451111'}>
+                >
                     <FaPhoneAlt />
-                </Link>
-            </div>
+                </div>
+            </Link>
         </div>
     )
 }
