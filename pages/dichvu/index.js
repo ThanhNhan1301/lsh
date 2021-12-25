@@ -17,7 +17,7 @@ export default function Dichvu() {
                     đầu tư, doanh nghiệp, tổ chức, cá nhận để tạo ra những
                     chuyển biến tích cực trong hoạt động quản lý, đầu tư, kinh
                     doanh thương mại,{' '}
-                    <Link href='/dichvu/sohuutritue'>
+                    <Link href='/dichvu/sohuutritue' passHref>
                         <span className='cursor-pointer text-blue-600 pl-[3px]'>
                             sở hữu trí tuệ
                         </span>

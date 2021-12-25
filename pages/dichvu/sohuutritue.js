@@ -51,7 +51,7 @@ export default function SohuuTritue() {
                 <p className='leading-8 mb-3'>
                     Quý khách có nhu cầu hãy liên hệ với chúng tôi để được tư
                     vấn luật trực tiếp từ các luật sư và chuyên gia giỏi tại
-                    <Link href='/dichvu/sohuutritue'>
+                    <Link href='/' passHref>
                         <span className='cursor-pointer text-blue-600 pl-[3px]'>
                             www.luatsuha.vn
                         </span>

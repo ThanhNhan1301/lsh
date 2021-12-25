@@ -57,11 +57,11 @@ export default function Batdongsanxaydung() {
                 </p>
                 <p className='leading-8 mb-3'>
                     Tham khảo thêm dịch vụ của Luật sư Hà tại{' '}
-                    <Link href='/dichvu/sohuutritue'>
+                    <Link href='/dichvu/sohuutritue' passHref>
                         <span className='cursor-pointer text-blue-600 pl-[3px]'>
                             www.luatsuha.vn
                         </span>
-                    </Link>{' '}
+                    </Link>
                 </p>
             </div>
         </div>

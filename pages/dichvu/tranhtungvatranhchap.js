@@ -64,7 +64,7 @@ export default function Tranhtungvatranhchap() {
 
                 <p className='leading-8 mb-3'>
                     Liên hệ{' '}
-                    <Link href='/'>
+                    <Link href='/' passHref>
                         <span className='cursor-pointer text-blue-600 pl-[3px]'>
                             Công ty luật TNHH Luật sư Hà
                         </span>
