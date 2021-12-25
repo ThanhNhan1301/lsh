@@ -32,6 +32,20 @@ export default function Lienhe() {
                         </Link>
                     </p>
                 </div>
+                <div
+                    className='
+                        rounded-md overflow-hidden w-[95%] h-[350px]
+                        border m-5 shadow-lg p-1 max-w-[600px]
+                    '
+                >
+                    <iframe
+                        src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5543.181777201991!2d106.65909124248788!3d10.763631917215507!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752eeeaf043453%3A0x2cde805894b358d8!2zNDU4LCA2IMSQxrDhu51uZyAzLzIsIFBoxrDhu51uZyAxNSwgUXXhuq1uIDExLCBUaMOgbmggcGjhu5EgSOG7kyBDaMOtIE1pbmgsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1640420291842!5m2!1svi!2s'
+                        width='100%'
+                        height='100%'
+                        allowfullscreen=''
+                        loading='lazy'
+                    ></iframe>
+                </div>
             </div>
         </div>
     )
