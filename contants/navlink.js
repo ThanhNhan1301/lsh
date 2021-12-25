@@ -39,24 +39,24 @@ export default [
             },
         ],
     },
-    {
-        title: 'Cộng sự',
-        pathname: '/congsu',
-        sub: [
-            {
-                subname: 'Luật sư',
-                pathsubname: '/luatsu',
-            },
-            {
-                subname: 'Chuyên viên tư vấn',
-                pathsubname: '/chuyenvientuvan',
-            },
-            {
-                subname: 'Hành chính',
-                pathsubname: '/hanhchinh',
-            },
-        ],
-    },
+    // {
+    //     title: 'Cộng sự',
+    //     pathname: '/congsu',
+    //     sub: [
+    //         {
+    //             subname: 'Luật sư',
+    //             pathsubname: '/luatsu',
+    //         },
+    //         {
+    //             subname: 'Chuyên viên tư vấn',
+    //             pathsubname: '/chuyenvientuvan',
+    //         },
+    //         {
+    //             subname: 'Hành chính',
+    //             pathsubname: '/hanhchinh',
+    //         },
+    //     ],
+    // },
     {
         title: 'Bài viết',
         pathname: '/baiviet',
