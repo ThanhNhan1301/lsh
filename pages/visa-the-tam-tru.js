@@ -155,7 +155,7 @@ export default function VisaTheTamTru() {
                             lao động theo quy định của pháp luật về lao động.
                         </li>
                     </ul>
-                    <div className='p-5 mb-5 bg-gray-400 text-gray-700 rounded-md'>
+                    <div className='p-5 mb-5 bg-gray-400 text-gray-700 rounded-md shadow-md'>
                         <div className='leading-8 mb-3 '>
                             Trường hợp chuyển đổi mục đích thị thực theo quy
                             định tại khoản này thì được cấp thị thực mới có ký
