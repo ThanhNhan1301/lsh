@@ -1,23 +1,17 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import {useState} from 'react'
-import {BiChevronDown} from 'react-icons/bi'
+
 import {FaStream} from 'react-icons/fa'
-import navlinks from '../../../contants/navlink'
+import HeaderLinkOnPc from './headerLinkOnPc'
+import HeaderLinksOnMobile from './headerLinksOnMobile'
 
 export default function Header() {
-    const [showNavLink, setShowNavLink] = useState(false)
-    const [subNavlink, setSubNavlink] = useState(null)
+    const [showHeaderLink, setShowHeaderLink] = useState(false)
 
-    const handleChangeNavlink = (index) => {
-        if (index === subNavlink) {
-            return setSubNavlink(null)
-        }
-        return setSubNavlink(index)
-    }
     return (
         <div>
-            <div className='bg-gray-900 p-5 flex justify-between items-center'>
+            <div className='bg-gray-900 p-5 lg:px-[50px] flex justify-between items-center'>
                 <div className='cursor-pointer'>
                     <Link href='/' passHref={true}>
                         <div className='rounded-sm flex items-center gap-[20px]'>
@@ -40,93 +34,18 @@ export default function Header() {
                         </div>
                     </Link>
                 </div>
+                <HeaderLinkOnPc />
                 <div
-                    className='text-white p-2 text-lg border border-white rounded-sm opacity-90 cursor-pointer'
-                    onClick={() => setShowNavLink(!showNavLink)}
+                    className='lg:hidden text-white p-2 text-lg border border-white rounded-sm opacity-90 cursor-pointer'
+                    onClick={() => setShowHeaderLink(!showHeaderLink)}
                 >
                     <FaStream />
                 </div>
             </div>
-            <div
-                className={`w-full bg-gray-700   transition-all duration-[3s] overflow-hidden ${
-                    showNavLink ? 'h-auto' : 'h-0'
-                }`}
-            >
-                <ul className='px-5'>
-                    {navlinks &&
-                        navlinks.map((item, index) => {
-                            return (
-                                <li
-                                    key={index}
-                                    className='border-b border-dashed py-5 last:border-b-0'
-                                >
-                                    <div
-                                        className='
-                                            font-semibold text-gray-300 hover:text-white 
-                                            flex justify-between items-center
-                                        '
-                                    >
-                                        <div
-                                            onClick={() =>
-                                                setShowNavLink(!showNavLink)
-                                            }
-                                        >
-                                            <Link href={item.pathname}>
-                                                {item.title}
-                                            </Link>
-                                        </div>
-                                        {item.sub && (
-                                            <div
-                                                className={`w-6 h-6 cursor-pointer text-2xl transition ${
-                                                    subNavlink &&
-                                                    subNavlink === index
-                                                        ? 'rotate-180'
-                                                        : 'rotate-0'
-                                                }`}
-                                                onClick={() =>
-                                                    handleChangeNavlink(index)
-                                                }
-                                            >
-                                                <BiChevronDown />
-                                            </div>
-                                        )}
-                                    </div>
-
-                                    {item.sub &&
-                                        item.sub.map((sub) => {
-                                            return (
-                                                <div
-                                                    key={sub.pathsubname}
-                                                    className={`text-gray-400 hover:text-white 
-                                                    overflow-hidden ${
-                                                        subNavlink &&
-                                                        subNavlink === index
-                                                            ? 'h-auto'
-                                                            : 'h-0'
-                                                    }`}
-                                                >
-                                                    <div
-                                                        className='pl-4 py-2'
-                                                        onClick={() =>
-                                                            setShowNavLink(
-                                                                !showNavLink
-                                                            )
-                                                        }
-                                                    >
-                                                        <Link
-                                                            href={`${item.pathname}${sub.pathsubname}`}
-                                                        >
-                                                            {sub.subname}
-                                                        </Link>
-                                                    </div>
-                                                </div>
-                                            )
-                                        })}
-                                </li>
-                            )
-                        })}
-                </ul>
-            </div>
+            <HeaderLinksOnMobile
+                show={showHeaderLink}
+                handleShow={setShowHeaderLink}
+            />
         </div>
     )
 }
