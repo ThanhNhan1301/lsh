@@ -26,7 +26,7 @@ export default function Gioithieuchung() {
                 </p>
                 <p className='leading-8 mb-3 font-semibold'>
                     Công ty luật Luật sư Hà – Tư vấn pháp luật{' '}
-                    <Link href='tel:+84983451111'>
+                    <Link href='tel:+84983451111' passHref>
                         <span className='text-blue-600 cursor-pointer pl-[2px]'>
                             0983.451111
                         </span>

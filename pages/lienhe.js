@@ -17,7 +17,7 @@ export default function Lienhe() {
                     </p>
                     <p className='leading-8 mb-3'>
                         <span className='font-semibold'>Mobile: </span>
-                        <Link href={'tel:+84983451111'}>
+                        <Link href={'tel:+84983451111'} passHref>
                             <span className='text-blue-700 cursor-pointer'>
                                 0983.45.11.11
                             </span>
@@ -25,7 +25,7 @@ export default function Lienhe() {
                     </p>
                     <p className='leading-8'>
                         <span className='font-semibold'>Email: </span>
-                        <Link href={'mailto:luatsu.ha77@gmail.com'}>
+                        <Link href={'mailto:luatsu.ha77@gmail.com'} passHref>
                             <span className='text-blue-700 cursor-pointer'>
                                 luatsu.ha77@gmail.com
                             </span>

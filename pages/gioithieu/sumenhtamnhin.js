@@ -9,7 +9,7 @@ export default function Sumenhvatamnhin() {
                 <p className='leading-8 mb-3'>
                     <span className='font-semibold'>Luật sư Hà</span> mong muốn
                     mang đến cho xã hội sự cống hiến của nghề
-                    <Link href='/congsu/luatsu'>
+                    <Link href='/congsu/luatsu' passHref>
                         <span className='cursor-pointer text-blue-600 pl-[3px]'>
                             luật sư
                         </span>
@@ -27,7 +27,7 @@ export default function Sumenhvatamnhin() {
                     <span className='font-semibold'>Luật sư Hà</span> hướng đến
                     là Công ty luật hoạt động đa lĩnh vực có uy tín lớn trong và
                     ngoài nước, với{' '}
-                    <Link href='/congsu/chuyenvientuvan'>
+                    <Link href='/congsu/chuyenvientuvan' passHref>
                         <span className='cursor-pointer text-blue-600 pl-[3px]'>
                             đội ngũ luật sư
                         </span>
