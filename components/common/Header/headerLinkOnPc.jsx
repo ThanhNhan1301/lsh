@@ -7,7 +7,7 @@ export default function HeaderLinkOnPc() {
     if (!navlink) return <Fragment />
     return (
         <div>
-            <ul className='w-full flex gap-[25px]'>
+            <ul className='hidden w-full lg:flex gap-[25px] '>
                 {navlink.map((link, index) => {
                     return (
                         <li key={index} className='text-white relative group'>

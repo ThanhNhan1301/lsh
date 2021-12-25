@@ -12,7 +12,7 @@ export default function Header() {
     return (
         <div>
             <div className='bg-gray-900 p-5 lg:px-[50px] flex justify-between items-center'>
-                <div className='cursor-pointer'>
+                <div className='cursor-pointer flex-shrink-0'>
                     <Link href='/' passHref={true}>
                         <div className='rounded-sm flex items-center gap-[20px]'>
                             <Image
