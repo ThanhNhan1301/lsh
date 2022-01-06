@@ -1,0 +1,16 @@
+.ql-toolbar.ql-snow {
+    border: 0px !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1) !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: rgb(235, 233, 233);
+    line-height: 1.8 !important;
+}
+.ql-container {
+    border: none !important;
+    height: 60vh;
+    overflow: auto;
+    line-height: 1.8 !important;
+}
